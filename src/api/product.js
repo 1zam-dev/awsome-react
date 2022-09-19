@@ -5,5 +5,5 @@ export const getProducts = () => {
 };
 
 export const createProduct = () => {
-  return axiosClient.get("/product/create");
+  return axiosClient.put("/product/create");
 };

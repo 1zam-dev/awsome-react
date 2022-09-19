@@ -1,6 +1,7 @@
-import { Breadcrumb, Layout, Menu } from "antd";
+import { Breadcrumb, Image, Layout, Menu } from "antd";
 import React from "react";
 import { Outlet } from "react-router-dom";
+import { girlImage } from "../assets/images";
 const { Header, Content, Footer } = Layout;
 
 const CommonLayout = ({ children }) => (
@@ -11,7 +12,7 @@ const CommonLayout = ({ children }) => (
         theme="dark"
         mode="horizontal"
         defaultSelectedKeys={["2"]}
-        items={new Array(2).fill(null).map((_, index) => {
+        items={new Array(10).fill(null).map((_, index) => {
           const key = index + 1;
           return {
             key,

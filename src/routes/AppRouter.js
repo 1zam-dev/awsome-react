@@ -7,6 +7,7 @@ import ErrorNotFound from "../page/error/NotFound";
 import Home from "../page/home/home";
 import Product from "../page/product/Product";
 import Products from "../page/products/Products";
+import Todo from "../page/todo/todo";
 
 export default function AppRouter() {
   return (
