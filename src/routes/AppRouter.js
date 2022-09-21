@@ -8,6 +8,7 @@ import Home from "../page/home/home";
 import Product from "../page/product/Product";
 import Products from "../page/products/Products";
 import Todo from "../page/todo/todo";
+import NewTodo from "../page/newTodo/todo";
 
 export default function AppRouter() {
   return (
@@ -15,6 +16,8 @@ export default function AppRouter() {
       <Route path="/" element={<CommonLayout />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="todo" element={<Todo />} />
+        <Route path="new-todo" element={<NewTodo />} />
         <Route path="product" element={<Products />}></Route>
         <Route path="product/:productId" element={<Product />} />
         <Route path="*" element={<ErrorNotFound />} />
