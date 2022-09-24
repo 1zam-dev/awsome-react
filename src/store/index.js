@@ -12,6 +12,7 @@ import todoToolkitReducer from "./todoToolkit/todoSlice";
 //   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
 // );
 
+// configureStore - lam cac nhiem vu: createStore, combineReducer
 const store = configureStore({
   reducer: {
     todo: todoReducer,
